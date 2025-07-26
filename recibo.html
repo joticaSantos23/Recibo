@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  </head>
+<body>
+  <div class="invoice-box">
+    <div class="top-strip"></div> 
+
+    <div class="header">
+      <div class="brand">🔶 Brand Name<br><span style="font-size:12px;">Tagline Goes Here</span></div>
+      <div class="invoice-label">INVOICE</div>
+    </div>
+
+    <div class="info">
+      <div class="info-left">
+        <h3>Invoice to:</h3>
+        <p>Dwayne Clark<br>
+        26 Sunnyt Street Area,<br>
+        Queensland, Australia,<br>
+        4000</p>
+      </div>
+      <div class="info-right">
+        <p><strong>Invoice#</strong> &nbsp;&nbsp;&nbsp;&nbsp; 52148</p>
+        <p><strong>Date:</strong> &nbsp;&nbsp;&nbsp;&nbsp; 01 / 02 / 2020</p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>SL.</th>
+          <th>Item Description</th>
+          <th>Price</th>
+          <th>Qty.</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Lorem Ipsum Dolor</td>
+          <td>$50.00</td>
+          <td>1</td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pellentesque id neque ligula</td>
+          <td>$20.00</td>
+          <td>3</td>
+          <td>$60.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Interdum et malesuada fames</td>
+          <td>$10.00</td>
+          <td>2</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Vivamus volutpat faucibus</td>
+          <td>$90.00</td>
+          <td>1</td>
+          <td>$90.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p><strong>Sub Total:</strong> $220.00</p>
+      <p><strong>Tax:</strong> 0.00%</p>
+      <p><strong>Total:</strong> $220.00</p>
+    </div>
+
+    <div class="payment">
+      <h4>Thank you for your business</h4>
+      <p><strong>Payment Info:</strong><br>
+        Account #: 123 456 789<br>
+        Bank Name: Bank of America<br>
+        SWIFT Code: 12345ABCD
+      </p>
+    </div>
+
+    <div class="terms">
+      <strong>Terms & Conditions</strong><br>
+      Payment is due within 15 days. Please make checks payable to Brand Name. If you have any questions concerning this invoice, contact us at support@brandname.com.
+    </div>
+
+    <div class="footer">
+      Authorised Sign
+    </div>
+  </div>
+
+</body>
+</html>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+    }
+
+    .invoice-box {
+      width: 700px;
+      margin: 30px auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    .top-strip {
+      background: #000;
+      height: 8px;
+    }
+
+    .header {
+      background: #1a1a1a;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #ff0064;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .invoice-label {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff0064;
+    }
+
+    .info {
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #1a1a1a;
+    }
+
+    .info-left {
+      font-size: 14px;
+      color: white;
+    }
+
+    .info-left h3 {
+      margin: 0 0 5px;
+      color: white;
+    }
+
+    .info-right {
+      text-align: right;
+      font-size: 14px;
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 20px;
+      font-size: 14px;
+    }
+
+    thead {
+      background: #f5f5f5;
+    }
+
+    th, td {
+      padding: 12px 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .summary {
+      text-align: right;
+      margin: 20px 30px;
+    }
+
+    .summary p {
+      margin: 2px 0;
+    }
+
+    .payment, .terms {
+      font-size: 12px;
+      padding: 0 30px;
+      margin-top: 30px;
+    }
+
+    .payment h4 {
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      text-align: right;
+      padding: 0 30px 30px;
+      margin-top: 50px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .invoice-box {
+        width: 100%;
+      }
+      
+    }
+  </style>
+
